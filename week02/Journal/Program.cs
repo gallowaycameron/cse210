@@ -27,6 +27,10 @@ class Program
                 Entry entry = new Entry();
 
                 entry._date = DateTime.Now.ToShortDateString();
+
+                Console.Write("How are you feeling today? ");
+                entry._mood = Console.ReadLine();
+
                 entry._promptText = promptGenerator.GetRandomPrompt();
 
                 Console.WriteLine(entry._promptText);
